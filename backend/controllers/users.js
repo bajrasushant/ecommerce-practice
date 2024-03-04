@@ -9,7 +9,7 @@ userRouter.get("/", async (request, response) => {
 });
 
 userRouter.post("/", async (request, response) => {
-  const { username, name, password, email, phone, address, isAdmin, isMod } =
+  const { username, name, password, email, phone, address } =
     request.body;
   if (
     !username ||
